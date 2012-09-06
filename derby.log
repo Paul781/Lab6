@@ -1,0 +1,16 @@
+----------------------------------------------------------------
+Tue Sep 04 09:19:40 EST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-0139-8e6e-a6b2-0000047af3d0 
+on database directory /Users/michael/Documents/workspace/J2EE workspace/Lab6/URLCollection  with class loader sun.misc.Launcher$AppClassLoader@425224ee 
+Loaded from file:/Users/michael/Documents/workspace/J2EE%20workspace/apache-tomcat-7.0.29/lib/derby.jar
+java.vendor=Apple Inc.
+java.runtime.version=1.6.0_31-b04-415-11M3635
+user.dir=/Users/michael/Documents/workspace/J2EE workspace/Lab6
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Tue Sep 04 09:19:40 EST 2012: Shutting down Derby engine
+----------------------------------------------------------------
+Tue Sep 04 09:19:40 EST 2012:
+Shutting down instance a816c00e-0139-8e6e-a6b2-0000047af3d0 on database directory /Users/michael/Documents/workspace/J2EE workspace/Lab6/URLCollection with class loader sun.misc.Launcher$AppClassLoader@425224ee 
+----------------------------------------------------------------
