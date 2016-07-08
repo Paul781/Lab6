@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=GB18030">
-<title>Json</title>
+<title>Lab6</title>
 
 <script language="javascript" src="jquery.js"></script>
 <script language="javascript" src="json.js"></script>
 </head>
 <body>
-	<h1>please enter the button to give the URLs</h1>
+	<h1>please enter the button to send you URLS</h1>
 	<input type="button" value="test" onClick="jsonview();">
 	<div id="dateMessage">
 		<table id="planTable">
@@ -23,12 +23,13 @@
 	function jsonview() {
 		$.getJSON("http://localhost:8080/Lab6/myurls", null,
 				function call(data) {
+					//document.write("Hello world;<br />");
 					writeHtml(data);
 				});
 	}
 	function writeHtml(data) {
 		//alert(data.toJSONString());  
-		//alert(data.jobs); //返回的data就是一个JSON的对象  
+		//alert(data.jobs); 
 		var continents = data.URLs;
 		for ( var i = 0; i < continents.length; i++) {
 			//alert(continents[i].name);  
@@ -46,8 +47,8 @@
 
 
 
-<!--   
-   
+ 
+ <!--  
    
 <h2>create JSON object in JavaScript </h2>
 

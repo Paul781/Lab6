@@ -8,8 +8,8 @@ import java.sql.DatabaseMetaData;
 import java.util.*;
 
 public class derby {
-	private static String driver = "org.apache.derby.jdbc.EmbeddedDriver";
-	private static String protocol = "jdbc:derby:";
+	private static String driver = "org.apache.derby.jdbc.ClientDriver";
+	private static String protocol = "jdbc:derby://localhost:1527/";
 	String dbName = "URLCollection";
 
 	private PreparedStatement psInsert = null;
@@ -93,17 +93,17 @@ public class derby {
 			e.printStackTrace();
 		}
 
+		
 		try {
-
 			s.execute("drop table URLs");
 			System.out.println("Dropped table URLs");
-			DriverManager.getConnection("jdbc:derby:;shutdown=true");
-			try {
+			//DriverManager.getConnection("jdbc:derby:;shutdown=true");
+			
 				conn.close();
 				conn = null;
 				s.close();
 				s = null;
-				rs.close();
+				//rs.close();
 				rs = null;
 
 			} catch (Exception e) {
@@ -112,7 +112,7 @@ public class derby {
 
 			// System.out.println("Shutdown Derby!");
 
-		} catch (SQLException se) {
+		/*} catch (SQLException se) {
 			if (((se.getErrorCode() == 50000) && ("XJ015".equals(se
 					.getSQLState())))) {
 
@@ -126,7 +126,7 @@ public class derby {
 				System.err.println("  Message:    " + se.getMessage());
 			}
 		}
-
+*/
 		return URls;
 	}
 
